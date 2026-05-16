@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FsVoice Third-Party Notices</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 2rem;
+      color: #222;
+      background: #fff;
+      max-width: 900px;
+    }
+    h1, h2 {
+      line-height: 1.25;
+    }
+    h1 {
+      margin-top: 0;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      border-bottom: 1px solid #ddd;
+      padding: 0.55rem;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background: #f7f7f7;
+    }
+    code {
+      background: #f4f4f4;
+      padding: 0.1rem 0.25rem;
+      border-radius: 4px;
+    }
+    .note {
+      background: #f7fbff;
+      border-left: 4px solid #2276d2;
+      padding: 0.75rem 1rem;
+      margin: 1rem 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Third-Party Software Notices</h1>
+
+  <p><strong>Last updated:</strong> May 16, 2026</p>
+
+  <p>
+    FsVoice.Demo uses open-source software and third-party services. This page summarizes the main
+    third-party components used by the app and points to their upstream license information.
+  </p>
+
+  <p>
+    FsVoice source code is licensed under the MIT License unless a different license is stated for a
+    specific file or bundled asset.
+  </p>
+
+  <div class="note">
+    This notice is provided for attribution and license transparency. The exact dependency graph may vary
+    by platform and app version.
+  </div>
+
+  <h2>App Dependencies</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Component</th>
+        <th>Purpose</th>
+        <th>License / Notice</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>.NET, F#, and .NET MAUI</td>
+        <td>Runtime, language libraries, and cross-platform app framework.</td>
+        <td>Microsoft open-source licenses; see the relevant Microsoft and .NET repositories.</td>
+      </tr>
+      <tr>
+        <td>Fabulous.MauiControls</td>
+        <td>Functional user-interface framework for .NET MAUI.</td>
+        <td>See the upstream Fabulous project license.</td>
+      </tr>
+      <tr>
+        <td>FSharp.Control.AsyncSeq</td>
+        <td>Asynchronous sequence processing.</td>
+        <td>See the upstream package license.</td>
+      </tr>
+      <tr>
+        <td>FSharp.SystemTextJson</td>
+        <td>F# support for JSON serialization.</td>
+        <td>See the upstream package license.</td>
+      </tr>
+      <tr>
+        <td>FSharp.DI</td>
+        <td>Dependency injection helpers.</td>
+        <td>See the upstream package license.</td>
+      </tr>
+      <tr>
+        <td>Microsoft.Extensions.AI and Microsoft.Extensions.AI.OpenAI</td>
+        <td>AI abstractions and OpenAI integration.</td>
+        <td>Microsoft open-source licenses; see the relevant Microsoft repositories.</td>
+      </tr>
+      <tr>
+        <td>Microsoft.Extensions.Logging.Console</td>
+        <td>Application logging support.</td>
+        <td>Microsoft open-source licenses; see the relevant Microsoft repositories.</td>
+      </tr>
+      <tr>
+        <td>Microsoft.ML.OnnxRuntime and Microsoft.ML.OnnxRuntime.Extensions</td>
+        <td>Local ONNX model execution.</td>
+        <td>See the ONNX Runtime license and notices from Microsoft.</td>
+      </tr>
+      <tr>
+        <td>RapidOCR.Net</td>
+        <td>OCR support for document processing.</td>
+        <td>See the upstream RapidOCR.Net package license.</td>
+      </tr>
+      <tr>
+        <td>PDFtoImage</td>
+        <td>PDF rasterization on supported platforms.</td>
+        <td>See the upstream PDFtoImage package license.</td>
+      </tr>
+      <tr>
+        <td>SkiaSharp</td>
+        <td>2D graphics and image processing.</td>
+        <td>See the SkiaSharp and Skia project licenses.</td>
+      </tr>
+      <tr>
+        <td>FsColbert</td>
+        <td>Retrieval indexing and search support.</td>
+        <td>See the upstream package license.</td>
+      </tr>
+      <tr>
+        <td>FsAICore</td>
+        <td>AI application support utilities.</td>
+        <td>See the upstream package license.</td>
+      </tr>
+      <tr>
+        <td>RTOpenAI.Api and RTOpenAI.Events</td>
+        <td>Realtime OpenAI API client and event handling.</td>
+        <td>See the upstream package license.</td>
+      </tr>
+      <tr>
+        <td>RTFlow</td>
+        <td>Workflow and agent orchestration support.</td>
+        <td>See the upstream package license.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Bundled Models And Assets</h2>
+
+  <p>
+    FsVoice may include or download local model files used for document layout, retrieval, OCR, or related
+    processing. One bundled model notice used by the FsVoice packages is:
+  </p>
+
+  <ul>
+    <li><strong>PP-DocLayout-M</strong>: Apache-2.0 according to the upstream PaddlePaddle Hugging Face model card.</li>
+  </ul>
+
+  <h2>Third-Party Services</h2>
+
+  <p>
+    FsVoice.Demo can connect to OpenAI services when the user provides an OpenAI API key. OpenAI is a
+    third-party service provider, and use of OpenAI-powered features is subject to OpenAI's applicable
+    terms and policies.
+  </p>
+
+  <h2>Related Links</h2>
+
+  <ul>
+    <li><a href="./privacy.html">FsVoice.Demo Privacy Policy</a></li>
+    <li><a href="https://github.com/fwaris/FsVoice">FsVoice source repository</a></li>
+  </ul>
+</body>
+</html>
