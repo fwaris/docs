@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FsVoice Settings Help</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 2rem;
+      color: #222;
+      background: #fff;
+      max-width: 900px;
+    }
+    h1, h2 {
+      line-height: 1.25;
+    }
+    h1 {
+      margin-top: 0;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin: 1rem 0 2rem;
+    }
+    th, td {
+      border-bottom: 1px solid #ddd;
+      padding: 0.55rem;
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      background: #f7f7f7;
+    }
+    code {
+      background: #f4f4f4;
+      padding: 0.1rem 0.25rem;
+      border-radius: 4px;
+    }
+    .note {
+      background: #f7fbff;
+      border-left: 4px solid #2276d2;
+      padding: 0.75rem 1rem;
+      margin: 1rem 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>FsVoice Settings Help</h1>
+
+  <p><strong>Last updated:</strong> May 17, 2026</p>
+
+  <p>
+    These settings control how FsVoice connects to OpenAI, chooses models, retrieves document context,
+    and processes local source files.
+  </p>
+
+  <div class="note">
+    Settings that affect document parsing or indexing usually require reprocessing documents before
+    existing source indexes reflect the change.
+  </div>
+
+  <h2>Account</h2>
+  <table>
+    <thead>
+      <tr><th>Setting</th><th>What it does</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>OpenAI key</td>
+        <td>Stores the API key used for realtime voice sessions, model calls, and optional keyword generation.</td>
+      </tr>
+      <tr>
+        <td>Use Case</td>
+        <td>Shows the active workflow definition. Use cases can provide their own prompts, models, and custom settings.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Models</h2>
+  <table>
+    <thead>
+      <tr><th>Setting</th><th>What it does</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Role model fields</td>
+        <td>Override the model used for each use-case role, such as answering, query rewriting, or keyword generation.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Retrieval</h2>
+  <table>
+    <thead>
+      <tr><th>Setting</th><th>What it does</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Mode</td>
+        <td>Chooses between the internal document index and the FsColbert retrieval index with fallback behavior.</td>
+      </tr>
+      <tr>
+        <td>Lexical Filter</td>
+        <td>Uses keyword and text matching to narrow candidate passages before answer generation.</td>
+      </tr>
+      <tr>
+        <td>Log Expansions</td>
+        <td>Adds query expansion details to the app log for troubleshooting retrieval behavior.</td>
+      </tr>
+      <tr>
+        <td>Log Chunks</td>
+        <td>Adds selected source chunks to the app log so you can inspect the context sent toward the answer flow.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>PDF Parsing</h2>
+  <table>
+    <thead>
+      <tr><th>Setting</th><th>What it does</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>PDF Parser</td>
+        <td>Switches between the newer hybrid parser and the older legacy parser for imported PDF documents.</td>
+      </tr>
+      <tr>
+        <td>Layout Analysis</td>
+        <td>Uses local layout detection while parsing PDFs. It is slower, but usually improves reading order and table/figure handling.</td>
+      </tr>
+      <tr>
+        <td>Index Keywords</td>
+        <td>Generates extra keywords for indexed passages. This can improve recall and may use OpenAI model calls.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Use Case Settings</h2>
+  <table>
+    <thead>
+      <tr><th>Setting</th><th>What it does</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Custom fields</td>
+        <td>Settings supplied by the active use case. Their effect depends on the selected workflow.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Links</h2>
+  <table>
+    <thead>
+      <tr><th>Link</th><th>What it opens</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Privacy Policy</td>
+        <td>The FsVoice privacy policy.</td>
+      </tr>
+      <tr>
+        <td>Third-Party Notices</td>
+        <td>Open-source and third-party software notices for the app.</td>
+      </tr>
+      <tr>
+        <td>Help</td>
+        <td>This settings reference.</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
