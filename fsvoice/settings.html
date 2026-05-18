@@ -50,7 +50,7 @@
 <body>
   <h1>FsVoice Settings Help</h1>
 
-  <p><strong>Last updated:</strong> May 17, 2026</p>
+  <p><strong>Last updated:</strong> May 18, 2026</p>
 
   <p>
     These settings control how FsVoice connects to OpenAI, chooses models, retrieves document context,
@@ -70,7 +70,10 @@
     <tbody>
       <tr>
         <td>OpenAI key</td>
-        <td>Stores the API key used for realtime voice sessions, model calls, and optional keyword generation.</td>
+        <td>
+          Stores the API key used for realtime voice sessions, model calls, and optional keyword generation.
+          Create a key from the OpenAI platform API keys page, then paste it into this field.
+        </td>
       </tr>
       <tr>
         <td>Use Case</td>
@@ -78,6 +81,14 @@
       </tr>
     </tbody>
   </table>
+
+  <div class="note">
+    Use a separate OpenAI API key for each app, device, automation, or experiment when practical.
+    This makes usage easier to monitor and lets you rotate or revoke one key without interrupting
+    unrelated workflows. Keep keys private, monitor usage and billing in the OpenAI platform
+    dashboard, and revoke keys that are no longer needed, exposed, or used on a device you no
+    longer control.
+  </div>
 
   <h2>Models</h2>
   <table>
