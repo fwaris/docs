@@ -9,3 +9,11 @@ Notable bundled notice:
 - PP-DocLayout-M notice: `src/FsVoice.QA/PackageNotices/PP-DocLayout-M-NOTICE.md`
 
 Speak2Docs source code is licensed under MIT. Third-party packages retain their respective licenses.
+
+## Built-in sample document
+
+Speak2Docs includes a built-in sample index for "An LLM-RAG Approach for Healthy Eating Index-Informed Personalized Food Recommendations" by Yibin Wang, Yanjie Yang, Grace Melo Guerrero, Rodolfo M. Nayga, and Azlan Zahid, arXiv:2605.15213, submitted May 11, 2026. The paper is licensed under Creative Commons Attribution 4.0 International: https://creativecommons.org/licenses/by/4.0/
+
+Source: https://arxiv.org/abs/2605.15213
+
+The PDF is redistributed unchanged. The local FsColbert index is generated from the PDF text for offline retrieval inside the app.

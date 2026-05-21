@@ -5,180 +5,61 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Speak2Docs Third-Party Notices</title>
   <style>
+    :root {
+      color-scheme: light dark;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.55;
+    }
+
     body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      line-height: 1.6;
       margin: 0;
-      padding: 2rem;
-      color: #222;
-      background: #fff;
-      max-width: 900px;
+      padding: 32px;
+      max-width: 840px;
     }
-    h1, h2 {
-      line-height: 1.25;
+
+    h1,
+    h2 {
+      line-height: 1.2;
     }
-    h1 {
-      margin-top: 0;
-    }
-    table {
-      border-collapse: collapse;
-      width: 100%;
-    }
-    th, td {
-      border-bottom: 1px solid #ddd;
-      padding: 0.55rem;
-      text-align: left;
-      vertical-align: top;
-    }
-    th {
-      background: #f7f7f7;
-    }
-    code {
-      background: #f4f4f4;
-      padding: 0.1rem 0.25rem;
-      border-radius: 4px;
-    }
-    .note {
-      background: #f7fbff;
-      border-left: 4px solid #2276d2;
-      padding: 0.75rem 1rem;
-      margin: 1rem 0;
+
+    li {
+      margin: 6px 0;
     }
   </style>
 </head>
 <body>
-  <h1>Third-Party Software Notices</h1>
-
-  <p><strong>Last updated:</strong> May 16, 2026</p>
-
+  <h1>Speak2Docs Third-Party Notices</h1>
   <p>
-    Speak2Docs uses open-source software and third-party services. This page summarizes the main
-    third-party components used by the app and points to their upstream license information.
+    Speak2Docs is built with .NET, .NET MAUI, F#, Fabulous, OpenAI client libraries, WebRTC
+    components, document parsing libraries, ONNX Runtime components, and related open-source packages.
+  </p>
+  <p>
+    The app may also include or download local model assets used for document layout analysis,
+    retrieval, or indexing. Package-specific notices in the source repository provide attribution
+    for embedded model assets.
   </p>
 
-  <p>
-    Speak2Docs source code is licensed under the MIT License unless a different license is stated for a
-    specific file or bundled asset.
-  </p>
-
-  <div class="note">
-    This notice is provided for attribution and license transparency. The exact dependency graph may vary
-    by platform and app version.
-  </div>
-
-  <h2>App Dependencies</h2>
-
-  <table>
-    <thead>
-      <tr>
-        <th>Component</th>
-        <th>Purpose</th>
-        <th>License / Notice</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>.NET, F#, and .NET MAUI</td>
-        <td>Runtime, language libraries, and cross-platform app framework.</td>
-        <td>Microsoft open-source licenses; see the relevant Microsoft and .NET repositories.</td>
-      </tr>
-      <tr>
-        <td>Fabulous.MauiControls</td>
-        <td>Functional user-interface framework for .NET MAUI.</td>
-        <td>See the upstream Fabulous project license.</td>
-      </tr>
-      <tr>
-        <td>FSharp.Control.AsyncSeq</td>
-        <td>Asynchronous sequence processing.</td>
-        <td>See the upstream package license.</td>
-      </tr>
-      <tr>
-        <td>FSharp.SystemTextJson</td>
-        <td>F# support for JSON serialization.</td>
-        <td>See the upstream package license.</td>
-      </tr>
-      <tr>
-        <td>FSharp.DI</td>
-        <td>Dependency injection helpers.</td>
-        <td>See the upstream package license.</td>
-      </tr>
-      <tr>
-        <td>Microsoft.Extensions.AI and Microsoft.Extensions.AI.OpenAI</td>
-        <td>AI abstractions and OpenAI integration.</td>
-        <td>Microsoft open-source licenses; see the relevant Microsoft repositories.</td>
-      </tr>
-      <tr>
-        <td>Microsoft.Extensions.Logging.Console</td>
-        <td>Application logging support.</td>
-        <td>Microsoft open-source licenses; see the relevant Microsoft repositories.</td>
-      </tr>
-      <tr>
-        <td>Microsoft.ML.OnnxRuntime and Microsoft.ML.OnnxRuntime.Extensions</td>
-        <td>Local ONNX model execution.</td>
-        <td>See the ONNX Runtime license and notices from Microsoft.</td>
-      </tr>
-      <tr>
-        <td>RapidOCR.Net</td>
-        <td>OCR support for document processing.</td>
-        <td>See the upstream RapidOCR.Net package license.</td>
-      </tr>
-      <tr>
-        <td>PDFtoImage</td>
-        <td>PDF rasterization on supported platforms.</td>
-        <td>See the upstream PDFtoImage package license.</td>
-      </tr>
-      <tr>
-        <td>SkiaSharp</td>
-        <td>2D graphics and image processing.</td>
-        <td>See the SkiaSharp and Skia project licenses.</td>
-      </tr>
-      <tr>
-        <td>FsColbert</td>
-        <td>Retrieval indexing and search support.</td>
-        <td>See the upstream package license.</td>
-      </tr>
-      <tr>
-        <td>FsAICore</td>
-        <td>AI application support utilities.</td>
-        <td>See the upstream package license.</td>
-      </tr>
-      <tr>
-        <td>RTOpenAI.Api and RTOpenAI.Events</td>
-        <td>Realtime OpenAI API client and event handling.</td>
-        <td>See the upstream package license.</td>
-      </tr>
-      <tr>
-        <td>RTFlow</td>
-        <td>Workflow and agent orchestration support.</td>
-        <td>See the upstream package license.</td>
-      </tr>
-    </tbody>
-  </table>
-
-  <h2>Bundled Models And Assets</h2>
-
-  <p>
-    Speak2Docs may include or download local model files used for document layout, retrieval, OCR, or
-    related processing. One bundled model notice used by the underlying packages is:
-  </p>
-
+  <h2>Notable Bundled Notice</h2>
   <ul>
-    <li><strong>PP-DocLayout-M</strong>: Apache-2.0 according to the upstream PaddlePaddle Hugging Face model card.</li>
+    <li>PP-DocLayout-M notice: <code>src/FsVoice.QA/PackageNotices/PP-DocLayout-M-NOTICE.md</code></li>
   </ul>
 
-  <h2>Third-Party Services</h2>
+  <p>Speak2Docs source code is licensed under MIT. Third-party packages retain their respective licenses.</p>
 
+  <h2>Built-in Sample Document</h2>
   <p>
-    Speak2Docs can connect to OpenAI services when the user provides an OpenAI API key. OpenAI is a
-    third-party service provider, and use of OpenAI-powered features is subject to OpenAI's applicable
-    terms and policies.
+    Speak2Docs includes a built-in sample index for <cite>An LLM-RAG Approach for Healthy
+    Eating Index-Informed Personalized Food Recommendations</cite> by Yibin Wang, Yanjie
+    Yang, Grace Melo Guerrero, Rodolfo M. Nayga, and Azlan Zahid, arXiv:2605.15213,
+    submitted May 11, 2026.
   </p>
-
-  <h2>Related Links</h2>
-
-  <ul>
-    <li><a href="./privacy.html">Speak2Docs Privacy Policy</a></li>
-    <li><a href="https://github.com/fwaris/FsVoice">FsVoice source repository</a></li>
-  </ul>
+  <p>
+    Source: <a href="https://arxiv.org/abs/2605.15213">https://arxiv.org/abs/2605.15213</a><br>
+    License: <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International</a>
+  </p>
+  <p>
+    The PDF is redistributed unchanged. The local FsColbert index is generated from the PDF
+    text for offline retrieval inside the app.
+  </p>
 </body>
 </html>

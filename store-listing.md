@@ -31,5 +31,6 @@ voice, documents, PDF, question answering, retrieval, AI, OpenAI, notes, researc
 ## Support And Privacy URLs
 
 - Support URL: https://fwaris.github.io/docs/
+- Terms of Use URL: https://fwaris.github.io/docs/fsvoice/terms.html
 - Privacy Policy URL: https://fwaris.github.io/docs/fsvoice/privacy.html
 - Third-Party Software License URL: https://fwaris.github.io/docs/fsvoice/third-party-notices.html
