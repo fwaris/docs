@@ -1,6 +1,6 @@
 # Speak2Docs Settings Help
 
-These sections match the Speak2Docs Settings screen. In the app, tap the Help icon in the Settings top bar to open this page.
+Settings are locked when Speak2Docs is busy, a realtime connection is starting or active, or a source operation is running. Disconnect or wait for processing to finish before changing them.
 
 ## Account
 
