@@ -2,6 +2,8 @@
 
 Settings are locked when Speak2Docs is busy, a realtime connection is starting or active, or a source operation is running. Disconnect or wait for processing to finish before changing them.
 
+The Settings top-bar Help icon opens this page.
+
 ## Account
 
 Account settings identify the OpenAI account Speak2Docs should use.
@@ -102,6 +104,14 @@ Adds retrieved chunk diagnostics to the activity log.
 ## PDF Parsing
 
 PDF parsing always uses the Hybrid parser. These settings control optional Hybrid indexing features.
+
+### Optical Parsing
+
+Uses local OCR for PDF pages whose native text is missing or too sparse. This can make scanned or Adobe Distiller-produced documents readable but may take longer.
+
+### Auto OCR Fallback
+
+Automatically OCRs individual PDF pages when native text extraction returns enough text but the text looks garbled. This setting is active only when Optical Parsing is enabled.
 
 ### Layout Analysis
 
